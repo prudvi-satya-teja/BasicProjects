@@ -1,0 +1,152 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+         .a2 {
+            display: flex;
+            justify-content: space-between;
+        }
+         .a {
+            width: 400px;
+            height: 500px;
+            margin-top: 50px;
+            margin-left: 500px;
+            background-color: red;
+            padding: 20px;
+        }
+
+        .a1 {
+            height: auto;
+            width: 400px;
+            /* background-color: white; */
+            margin-bottom: 10px;
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            padding: 1px;
+        }
+
+        .a2 {
+              
+            height: 60px;
+            width: 60px;
+            background-color: white;
+            margin-left: 1px;
+            margin-right: 1px;
+            margin-top: 1px;
+            align-items: center;
+            padding-left: 20px ;
+        } 
+        .face {
+            height: 90px;
+            width:400px;
+            background-color: white;
+            margin-bottom: 10px;
+        }
+
+        .end {
+            height: 70px;
+            width:auto;
+            background-color: rgb(249, 65, 206);
+            text-shadow: 10px;
+            text-decoration: aqua;
+            text-size-adjust: 10px;
+            align-items: center;
+        }
+
+    </style>
+</head>
+<body>
+
+        <h1> <center>BASIC CALCULATOR</center></h1>
+
+
+    <div class="a">
+        <div class="face">
+            <p id="output"></p>
+        </div>
+        
+        <div class="a1"> 
+            <button class="a2" onclick="addToStr('A')">;;</button>
+            <button class="a2" onclick="addToStr('C')">C</button>
+            <button class="a2" onclick="addToStr('.')">.</button>
+            <button class="a2" onclick="addToStr('/')">/</button>
+
+           
+        </div>
+
+        <div class="a1"> 
+            <button class="a2" onclick="addToStr('7')">7</button>
+            <button class="a2" onclick="addToStr('8')">8</button>
+            <button class="a2" onclick="addToStr('9')">9</button>
+            <button class="a2" onclick="addToStr('*')">*</button>
+        </div>
+
+        <div class="a1"> 
+            <button class="a2" onclick="addToStr('4')">4</button>
+            <button class="a2" onclick="addToStr('5')">5</button>
+            <button class="a2" onclick="addToStr('6')">6</button>
+            <button class="a2" onclick="addToStr('-')">-</button>
+
+           
+        </div>
+
+        <div class="a1"> 
+            <button class="a2" onclick="addToStr('1')">1</button>
+            <button class="a2" onclick="addToStr('2')">2</button>
+            <button class="a2" onclick="addToStr('3')">3</button>
+            <button class="a2" onclick="addToStr('+')">+</button>
+        </div>
+        
+        <div class="a1"> 
+            <button class="a2" onclick="addToStr('00')">00</button>
+            <button class="a2" onclick="addToStr('0')">0</button>
+            <button class="a2" onclick="addToStr('.')">.</button>
+            <button class="a2" onclick="addToStr('=')">=</button>
+
+           
+        </div>
+
+    </div>
+    <div class="end"> <h3>Powered by prudvi</h3></div>
+
+
+    
+</body>
+
+<script>
+
+    let str = "";
+    let a = 0;
+
+    function addToStr(num1) {
+
+        if(num1 == '=') {
+            a = eval(str);
+            str = '';
+            document.getElementById("output").innerHTML = a;
+           
+        }
+        else if(num1 == 'C') {
+            str = '';
+            document.getElementById("output").innerHTML = str;
+            
+        }
+        else if(num1 == '+' || num1 == '-' || num1 == '*' || num1 == '/') {
+            str += num1;
+            document.getElementById("output").innerHTML = str;
+            
+        }
+        else {
+            str += num1;
+            document.getElementById("output").innerHTML = str;
+            
+        }
+
+    }
+
+</script>
+</html>
