@@ -1,0 +1,470 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        header {
+            font-size: 30px;
+            height: 100px;
+            color: rgb(265, 265, 265);
+            padding-bottom: 10px;
+        }
+
+        .aa {
+            display: flex;
+            justify-content: space-between;
+            margin: 20px;
+            background-color: rgb(265, 265, 265);
+        }
+        a {
+            text-decoration: none;
+        }
+        .a,.b,.c,.d,.e {
+            flex:1;
+        }
+        .a img,.b img,.c img,.d img, .e img {
+            width: 100%; /* Ensure the image fills the circular div */
+            height: 170px; /* Maintain aspect ratio */
+            display: block; /* Remove default image spacing */
+            border-radius:10%;
+            cursor: pointer;
+            box-shadow: 10px 10px 10px rgb(80, 97, 104);
+            color: rgb(38, 44, 165);
+            border-color: rgb(174, 33, 33);
+            
+        }
+        
+
+        .a,.b,.c,.d,.e {
+            display: flex;
+            width: 200px;
+            height: 195px;
+            margin-left: 20px;
+            margin-right: 20px;
+            flex-direction: column;
+            justify-content: center;
+            align-items: center;
+            /* text-shadow: 2px 2px 2px rgb(30, 31, 29); */
+            font-size: 30px;
+            margin-top: 20px;
+            
+        }
+
+        .ab{
+            display: flex;
+            flex-direction: row;
+            width: 100%;
+            height: 650px;
+            background-color: rgb(124, 118, 123);
+            /* margin-left: 30px; */
+            margin-right: 30px;
+            margin-top: 20px;
+            border-radius: 40px;
+            box-shadow: 20px 20px 20px rgb(57, 57, 86);
+            margin-top: 40px;
+            margin-bottom: 30px;
+        }
+        .f{
+            flex:80%;
+            background-color: rgb(145, 145, 215);
+            float: right;
+           
+        }
+        .f {
+            
+            font-size: 50px;
+        }
+        .g {
+            flex: 20%;
+            background-color: blueviolet;
+            float: left;
+        }
+        .h {
+             font-size:50;
+             height: 350px;
+             margin-left: 20px;
+             margin-top: 30px;
+             margin-right: 20px;
+             justify-content: center;
+            align-items: center;
+            text-align: center;
+
+        }
+        .h img {
+            width: 400px; /* Ensure the image fills the circular div */
+            height: 280px; /* Maintain aspect ratio */
+            display: block; /* Remove default image spacing */
+            border-radius:10%;
+            cursor: pointer;
+            box-shadow: 20px 20px 20px rgb(11, 14, 16);
+            color: rgb(38, 44, 165);
+            border-color: rgb(174, 33, 33);
+            border-radius: 20%;
+            margin-left: 20px;
+            margin-right: 20px;
+            margin-bottom: 20px;
+            
+        }
+        .head {
+            position: fixed;
+            top: 0;
+            left: 0;
+            text-align: center;
+            width: 100%;
+            height: 100px;
+            background-color: rgb(216, 28, 53);
+            z-index: 999; 
+            padding-top: 0;
+        }
+        .end {
+            width :auto;
+            height: 120px;
+            background-color: rgb(95, 154, 237);
+            text-align: center;
+        }
+    </style> 
+</head>
+<body>
+
+    <div class="head">
+        <header>
+            <h1>Eenagaraniki amaindi</h1>
+        </header>
+    </div>
+    <br><br><br><br>
+
+    <div class="aa">
+        <a href="#targetdiv">
+        <div class="a" id="section1">
+            
+               
+                <img id="image1" src="sanjay2.jpg" width="200px" height="200px" onmouseover="zoomin('image1')" onmouseleave="zoomout('image1')">
+                Sanjay
+            
+        </div>
+    </a>
+    <a href="#targetdiv2">
+        <div class="b">
+             
+                <img id="image2" src="mani.jpg" width="200px" height="200px" onmouseover="zoomin('image2')" onmouseleave="zoomout('image2')">
+                Mani shankar
+        </div>
+        </a>
+        <a href="#targetdiv3">
+        <div class="c">
+          
+            <img id="image3" src="balaram.jpg" width="200px" height="200px" onmouseover="zoomin('image3')" onmouseleave="zoomout('image3')">
+            Balaram
+        </div></a>
+        <a href="#targetdiv4">
+        <div class ="d">
+          
+            <img id="image4" src="saleem.jpg" width="200px" height="200px" onmouseover="zoomin('image4')" onmouseleave="zoomout('image4')">
+            Saleem
+        </div></a>
+        <a href="#targetdiv5">
+        <div class = "e">
+           
+            <img id="image5" src="baseer.jpg" width="200px" height="200px" onmouseover="zoomin('image5')" onmouseleave="zoomout('image5')">
+            Baseer
+        </div></a>
+    </div>
+
+
+    <div class="aa">
+        <a href="#targetdiv6">
+
+        <div class="a" >
+                <img id="image6" src="Chandu.jpg" width="200px" height="200px" onmouseover="zoomin('image6')" onmouseleave="zoomout('image6')">
+                Chandu
+            
+        </div></a><a href="#targetdiv7">
+
+
+        <div class="b">
+              
+                <img id="image7" src="venkat.jpg" width="200px" height="200px" onmouseover="zoomin('image7')" onmouseleave="zoomout('image7')">
+                Venkat
+        </div></a><a href="#targetdiv8">
+
+        <div class="c">
+          
+            <img id="image8" src="sivaram.jpg" width="200px" height="200px" onmouseover="zoomin('image8')" onmouseleave="zoomout('image8')">
+            Sivaram
+        </div></a><a href="#targetdiv9">
+
+        <div class ="d">
+            
+            <img id="image9" src="suchi.jpg" width="200px" height="200px" onmouseover="zoomin('image9')" onmouseleave="zoomout('image9')">
+            Suchandra
+        </div></a><a href="#targetdiv10">
+
+        <div class = "e">
+            
+            <img id="image10" src="mouli.jpg" width="200px" height="200px" onmouseover="zoomin('image10')" onmouseleave="zoomout('image10')">
+            Mouli
+        </div></a>
+    </div>
+
+    <div class="aa">
+   <a href="#targetdiv11">
+        <div class="a" >
+              
+                <img id="image11" src="teja.jpg" width="200px" height="200px" onmouseover="zoomin('image11')" onmouseleave="zoomout('image11')">
+                Nagateja
+        </div></a><a href="#targetdiv12">
+
+        <div class="b">
+             
+                <img id="image12" src="prudvi.JPG" width="200px" height="200px" onmouseover="zoomin('image12')" onmouseleave="zoomout('image12')">
+                Prudvi
+        </div></a><a href="#targetdiv13">
+
+        <div class="c">
+          
+            <img id="image13" src="surendra.jpg" width="200px" height="200px" onmouseover="zoomin('image13')" onmouseleave="zoomout('image13')">
+            Surendra
+        </div></a><a href="#targetdiv14">
+
+        <div class ="d">
+           
+            <img id="image14" src="hemanth.jpg" width="200px" height="200px" onmouseover="zoomin('image14')" onmouseleave="zoomout('image14')">
+            Hemanth
+        </div></a><a href="#targetdiv15">
+
+        <div class = "e">
+         
+            <img id="image15" src="prasad.jpg" width="200px" height="200px" onmouseover="zoomin('image15')" onmouseleave="zoomout('image15')">
+            Prasad
+        </div></a>
+    </div>
+    
+    <div class="ab" id="targetdiv">
+        <div class="f">
+            <p><h2> Name :Sanjay <br> Roll NO: 22a91a05k9 <br> DOB : <br> Other Details :</p>
+
+        </div>
+        <div class="h">
+            <br><br><br><h2>22A91A05K9</h2><br>
+                <img src="sanjay2.jpg" width="200px" height="200px">
+                <div>
+                    <br><br><h2>SANJAY BANDARU</h2>
+                </div>
+                
+        </div>
+
+        </div>
+    </div>
+    <div class="ab" id="targetdiv2">
+        
+        <div class="f">
+            <p><h2> Name : mani shankar <br> Roll NO: 22a91a0582 <br> DOB : <br> Other Details :</p>
+
+        </div>
+        <div class="h"><br><br><br><h2>22A91A0582</h2><br>
+            <img src="mani.jpg" width="200px" height="200px">
+            <div>
+                <br><br><h2>MANI SHANKAR</h2>
+            </div>
+
+        </div>
+    </div>
+    <div class="ab" id="targetdiv3" >
+        <div class="f">
+            <p><h2> Name : balaram <br> Roll NO: 22a91a0599 <br> DOB : <br> Other Details :</p>
+
+        </div>
+        <div class="h" >
+            <br><br><br><h2>22A91A0599</h2>
+            <br>
+            <img src="balaram.jpg" width="200px" height="200px">
+            <div>
+                <br><br><h2>SAI VENKATA BALARAM</h2>
+            </div>
+        </div>
+    </div>
+    <div class="ab" id="targetdiv4">
+        <div class="f">
+            <p><h2> Name : saleem <br> Roll NO: 22a91a0594 <br> DOB : <br> Other Details :</p>
+
+        </div>
+        <div class="h">
+             <br><br><br><h2>22A91A0594</h2><br>
+            <img src="saleem.jpg" width="200px" height="200px">
+            <div>
+                <br><br><h2>SHEIK SALEEM</h2>
+            </div>
+        </div>
+    </div>
+    <div class="ab" id="targetdiv5">
+        <div class="f">
+            <p><h2> Name : baseer <br> Roll NO: 22a91a0592 <br> DOB : <br> Other Details :</p>
+
+        </div>
+        <div class="h">
+            <br><br><br>
+            <h2>22A91A0592</h2>
+            <br>
+            <img src="baseer.jpg" width="200px" height="200px">
+            <div>
+                <br><br><h2>ASRAF BASEER</h2>
+            </div>
+        </div>
+    </div>
+    <div class="ab" id="targetdiv6">
+        <div class="f">
+            <p><h2> Name : chandu <br> Roll NO: 22a91a0583 <br> DOB : <br> Other Details :</p>
+
+        </div>
+        <div class="h">
+            <br><br><br><h2>22A91A0583</h2><br>
+            <img src="chandu.jpg" width="200px" height="200px">
+            <div>
+                <br><br><h2>CHANDU MAJJI</h2>
+            </div>
+        </div>
+    </div>
+    <div class="ab" id="targetdiv7">
+        <div class="f">
+            <p><h2> Name : kotha venkat <br> Roll NO: 22a91a0579 <br> DOB : <br> Other Details :</p>
+
+        </div>
+        <div class="h">
+            <br><br><br><h2>22A91A0579</h2><br>
+            <img src="venkat.jpg" width="200px" height="200px">
+            <div>
+                <br><br><h2>VENKAT KOTHA</h2>
+            </div>
+        </div>
+    </div>
+    <div class="ab" id="targetdiv8">
+        <div class="f">
+            <p><h2> Name : Siva ram <br> Roll NO: 22a91a0584 <br> DOB : <br> Other Details :</p>
+
+        </div>
+        <div class="h">
+            <br><br><br><h2>22A91A0584</h2><br>
+            <img src="sivaram.jpg" width="200px" height="200px">
+            <div>
+                <br><br><h2>SIVA RAM</h2>
+            </div>
+        </div>
+    </div>
+    <div class="ab" id="targetdiv9">
+        <div class="f">
+            <p><h2> Name : Suchandra <br> Roll NO: 22a91a0570 <br> DOB : <br> Other Details :</p>
+
+        </div>
+        <div class="h">
+            <br><br><br><h2>22A91A0570</h2><br>
+            <img src="suchi.jpg" width="200px" height="200px">
+            <div>
+                <br><br><h2>SUCHANDRA</h2>
+            </div>
+        </div>
+    </div>
+    <div class="ab" id="targetdiv10">
+        <div class="f">
+            <p><h2> Name : chandra naga mouli <br> Roll NO: 22a91a1280 <br> DOB : <br> Other Details :</p>
+
+        </div>
+        <div class="h">
+            <br><br><br>
+            <h2>22A91A1280</h2>
+            <br>
+            <img src="mouli.jpg" width="200px" height="200px">
+            <div>
+                <br><br><h2>CHANDRA NAGA MOULI</h2>
+            </div>
+        </div>
+    </div>
+    <div class="ab" id="targetdiv11">
+        <div class="f">
+            <p><h2> Name : Naga teja <br> Roll NO: 22a91a1285 <br> DOB : <br> Other Details :</p>
+
+        </div>
+        <div class="h">
+            <br><br><br><h2>22A91A1285</h2><br>
+            <img src="teja.jpg" width="200px" height="200px">
+            <div>
+                <br><br<h2>NAGA TEJA</h2>
+            </div>
+        </div>
+    </div>
+    <div class="ab" id="targetdiv12">
+        <div class="f">
+           <p><h2> Name : prudvi satya teja <br> Roll NO: 22a91a0565 <br> DOB : <br> Other Details :</p>
+        </div>
+        <div class="h">
+            <br><br><br><h2>22A91A0565</h2><br>
+            <img src="prudvi.jpg" width="200px" height="200px">
+            <div>
+                <br><br><h2>PRUDVI SATYA TEJA</h2>
+            </div>
+        </div>
+    </div>
+    <div class="ab" id="targetdiv13">
+        <div class="f">
+            <p><h2> Name : Surendra <br> Roll NO: 22a91a0597 <br> DOB : <br> Other Details :</p>
+
+        </div>
+        <div class="h">
+            <br><br><br><h2>22A91A0597</h2><br>
+            <img src="surendra.jpg" width="200px" height="200px">
+            <div>
+                <br><br>
+                <h2>SURENDRA REDDY</h2>
+            </div>
+        </div>
+    </div>
+    <div class="ab" id="targetdiv14">
+        <div class="f">
+            <p><h2> Name : Hemanth Kumar <br> Roll NO: 22a91a05A0 <br> DOB : <br> Other Details :</p>
+
+        </div>
+        <div class="h">
+            <br><br><br><h2>22A91A05A0</h2><br>
+            <img src="hemanth.jpg" width="200px" height="200px">
+            <div>
+                <br><br><h2>HEMANTH KUMAR</h2>
+            </div>
+        </div>
+    </div>
+    <div class="ab" id="targetdiv15">
+        <div class="f">
+            <p><h2> Name : Naga Prasad <br> Roll NO: 22a91a0569 <br> DOB : <br> Other Details :</p>
+
+
+        </div>
+        <div class="h">
+            <br><br><br><h2>22A91A0569</h2><br>
+            <img src="prasad.jpg" width="200px" height="200px">
+            <div>
+                <br><br><h2>NAGA PRASAD</h2>
+            </div>
+        </div>
+    </div>
+
+    <div class="end">
+
+        <h2> powered by Pro+</h2><br>
+        <h2>copyright@ prudvi</h2>
+
+    </div>
+
+
+    
+</body>
+
+<script>
+    function zoomin(ImageId) {
+        document.getElementById(ImageId).style.width="250px";
+    }
+
+    function zoomout(ImageId) {
+        document.getElementById(ImageId).style.width='200px';
+    }
+</script>
+</html>

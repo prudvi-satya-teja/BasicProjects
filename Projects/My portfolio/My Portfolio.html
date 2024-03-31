@@ -1,0 +1,150 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        .aa {
+            display: flex;
+            justify-content: space-between;
+            margin: 20px;
+        }
+        .a,.a1 {
+            flex:1;
+        }
+        .a{
+            min-width: 700px;
+            max-width: 1200px;
+            min-height: 5px;
+            max-height: 350px;
+            margin-left: 25px;
+            background-color: rgb(35, 184, 102);
+            color:rgb(141, 32, 119);
+            border: 2px solid black;
+            box-shadow: 10px 10px 10px rgb(32, 141, 50);
+            overflow: hidden;
+            display: inline-block;
+            flex-basis: 80%;
+            
+        }
+        .a1{
+            width: 300px;
+            height: 250px;
+            background-color: rgb(92, 58, 171);
+            margin-left: 25px;
+            overflow: hidden;
+            flex-basis: 20%;
+            box-shadow: 10px 10px 10px rgb(92, 58, 171);
+           
+
+        }
+        .a1 img {
+            width: 90%; /* Ensure the image fills the circular div */
+            height: 250px; /* Maintain aspect ratio */
+            display: block; /* Remove default image spacing */
+            border-radius:50%;
+            cursor: pointer;
+            margin-left: 20px;
+        }
+        
+
+        .b{
+            width: 300px;
+            height:160px;
+            margin-left:25px;
+            margin-top:25px;
+            background-color: rgb(154, 217, 54);
+            color:rgb(33, 7, 109);
+            border: 2px solid black;
+            box-shadow: 10px 10px 10px rgb(32, 141, 50);
+            padding-left: 20px;
+            padding-top: 10px;
+            
+        }
+
+        .c{
+            width:350px;
+            height:100px;
+            margin-left:25px;
+            background-color: rgb(217, 141, 49);
+            color:rgb(20, 59, 149) ;
+            box-shadow: 10px 10px 10px rgb(32, 141, 50);
+            border:2px solid black;
+        }
+
+        .d{
+            width: 350px;
+            height: 100px;
+            margin-left:25px;
+            background-color: rgb(194, 141, 141);
+            color: rgb(13, 47, 121);
+            box-shadow: 10px 10px 10px rgb(32, 141, 50);
+            border:2px solid black;
+        }
+      
+    </style>
+</head>
+<body>
+    <h1> <center> MY PORTFOLIO</center></h1>
+    <h2><u>Education</u></h2>
+    
+
+    <div class="aa">
+    <div class="a">
+        <h2>
+            <ul> 
+                <li>Bachelor of Computer Science and Engineering          
+                    <ul>
+                        <li>Aditya Engineering College, Surampalem </li>
+                        <li>Second year - 4th sem</li>
+                    </ul>
+                </li>
+                <li> Intermediate Education (Class XII)
+                    <ul>
+                        <li>   Gayathri Junior College, Tuni      </li>
+                        <li>   </li>
+                    </ul> 
+                </li>         
+            </ul>
+        </h2>
+
+         </div>
+
+         <div class="a1">
+            <img src="profile pic.jpg" >
+         </div>
+
+
+        </div>
+    <h2><u>Skills</u></h2>
+        <div class="b">
+            <ul> <h3>
+                <li>Java</li>
+                <li>C++</li>
+                <li>C</li>
+                <li>Python</li>
+                
+            </h3></ul>
+        </div>
+    <h2><u>Certifications</u></h2>
+        <div class="c">
+            <ul><h3>
+                <li>C++ cetification from cisco</li>
+                <li>Linux certification from cisco</li>
+
+            </h3></ul>
+        </div>
+    
+    <h2><u>Achievements</u></h2>
+    <div class="d">
+        <ul><h3>
+            <li>Solved 100+ problems in codemind</li>
+            <li>Got 5 Star in C++ on hackerrank</li>
+            <li></li>
+            <li></li>
+        </h3></ul>
+    </div>
+
+</body>
+</html>
